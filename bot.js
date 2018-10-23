@@ -321,7 +321,7 @@ client.on('message', message => {
     if (message.content === '1!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت !1**')
+        .setDescription('**برفكس البوت !3***')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -392,7 +392,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(` 3!help .`,'https/twitch/');
+  client.user.setGame(` 3!help .`,'https://www.twitch.tv/idk');
   console.log('---------------');
   console.log('Desert Bot Is Online')
   console.log('---------------')
