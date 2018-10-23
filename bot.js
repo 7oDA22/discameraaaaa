@@ -298,17 +298,6 @@ client.on("message", message => {
    }
    }); 
 
-client.on('guildCreate', guild => {
-         const embed = new Discord.RichEmbed()
-     .setColor("RED")
-     .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
-  .setDescription(`**
-  New Server Add arab Bot ✅
-اسم السيرفر: ${guild.name}
-صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("475600783010955264").sendEmbed(embed)
-});
 
 
 client.on('message', message => {
@@ -511,7 +500,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-v";
-const devs = ['252813587188416512','460147724063604747'];
+const devs = ['470602554611597315','411137717884289024'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -1106,7 +1095,7 @@ function getValue(key, array) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "arab bot";
+    let copy = "Gaming BOT Support";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -2412,7 +2401,7 @@ client.on("message", (message) => {
         console.log(`Restarting..`);
         setTimeout(() => {
             client.destroy();
-            client.login('NDcwMjQyOTE0MDIzMjQzNzg2.DjtILQ.GSGZt1p-ybzxrItc2Har3vyQcVo');
+             client.login(process.env.BOT_TOKEN);
         },3000);
     }
 });
