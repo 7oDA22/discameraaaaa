@@ -454,4 +454,4 @@ hero.on('message',async message => {
   }
 });
 
-hero.login("NDgzMjg2ODQ4NDQyMDczMDg5.Dmo1Nw.Ra0IFIFRGDKzBFFpy1X5-PR6QTc");
+client.login(process.env.BOT_TOKEN);
