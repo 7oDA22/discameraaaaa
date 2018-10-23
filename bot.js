@@ -403,7 +403,7 @@ client.on('message', message => {
             if (message.content.startsWith("من صاحب البوت")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('  Owner  **By:@ ༄ϻά𝔥𝔪𝔬𝔲𝓓-QuaStyle ≽ܫ≼#5661   Staff  @ l͠i͠f͠e͠#4630   Staff @ SُimŹik ,, 4kk ²²#7227  ** ')
+.addField(' ***Owner BOT Gaming @༄ϻά𝔥𝔪𝔬𝔲𝓓-QuaStyle ≽ܫ≼#5661***')
 .setColor("RANDOM")
   message.channel.sendEmbed(embed);
     }
