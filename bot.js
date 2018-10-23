@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "1!";
+const prefix = "3!";
 /////////////////////////
 ////////////////////////
 
@@ -348,7 +348,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    var prefix = "1!"
+    var prefix = "3!"
 if (message.content.startsWith(prefix + "uptime")) {
    let uptime = client.uptime;
 
@@ -392,7 +392,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(` 1!help .`,'');
+  client.user.setGame(` 3!help .`,'https/twitch/');
   console.log('---------------');
   console.log('Desert Bot Is Online')
   console.log('---------------')
