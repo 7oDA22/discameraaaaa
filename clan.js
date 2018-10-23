@@ -4,7 +4,7 @@ const hero = new Discord.Client({disableEveryone: true, maxMessagesCache: 1});
 const prefix = '-'
 
 hero.on('ready',async () => {
-    console.log(`Otaku: , iAmHeRo¹⁵ ☤`);
+    console.log(`Otaku: , GAMING ☤`);
     console.log(`User: ${hero.user.username}`);
     console.log(`Servers: ${hero.guilds.size}`);
     hero.generateInvite(['ADMINISTRATOR']).then(link => console.log(link));
