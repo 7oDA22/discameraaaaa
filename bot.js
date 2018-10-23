@@ -392,7 +392,7 @@ if (message.content.startsWith(prefix + "uptime")) {
 });
 
 client.on('ready', () => {
-  client.user.setGame(` 3!help .`,'https://www.twitch.tv/idk');
+  client.user.setGame(` 3!help ♥ `,'https://www.twitch.tv/idk');
   console.log('---------------');
   console.log('Desert Bot Is Online')
   console.log('---------------')
