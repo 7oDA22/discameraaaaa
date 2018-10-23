@@ -315,8 +315,8 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('>bcall')){
- if (message.author.id !== '252813587188416512') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
- if(!message.author.id === '252813587188416512') return;
+ if (message.author.id !== '411137717884289024') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+ if(!message.author.id === '411137717884289024') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2096,7 +2096,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : mohammed")
+     .setFooter("By :")
                                                 
 
 message.channel.send(embed);
@@ -2249,17 +2249,7 @@ client.on('message', message => {
 });
 
 
-client.on('message', message => {
-        if (message.content === "-inv") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond: اضغط هنا `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=470242914023243786&permissions=8&scope=bot`)
-        .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
-     message.channel.sendEmbed(embed);
-       }
-   });
+
  
 client.on('message', message => {
     if (message.content.startsWith("-avatar")) {
@@ -2300,17 +2290,7 @@ client.on('message', message => {
 });
 
 
-   client.on('message', message => {
-     if (message.content === "-support") {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  ****")
-     
-     
-  message.channel.sendEmbed(embed);
-    }
-});
+   
 client.on('message', omar => {
 var prefix = "-";
 if(omar.content.split(' ')[0] == prefix + 'dc') {  // delete all channels
@@ -2398,7 +2378,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('sssbcall')){
- if(!message.author.id === '411911292643704854') return;
+ if(!message.author.id === '411137717884289024') return;
 message.channel.sendMessage(' جار ارسال الرسالة | ✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2419,7 +2399,7 @@ client.on("message", (message) => {
 
   client.on('message',async message => {
     if(message.content.startsWith(prefix + "restart")) {
-        if(message.author.id !== "252813587188416512") return message.reply('You aren\'t the bot owner.');
+        if(message.author.id !== "411137717884289024") return message.reply('You aren\'t the bot owner.');
         message.channel.send('**Restarting.**').then(msg => {
             setTimeout(() => {
                msg.edit('**Restarting..**');
@@ -2460,7 +2440,7 @@ if (!rank) return message.reply('انت لا تمتلك الرتبه المخص�
 });
 
 client.on('message', function(message) {
-	const myID = "252813587188416512";
+	const myID = "411137717884289024";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
