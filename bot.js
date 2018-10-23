@@ -410,7 +410,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-     if (message.content === "g!support") {
+     if (message.content === "3!support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
